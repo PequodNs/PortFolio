@@ -7,6 +7,7 @@ interface PortfolioBoxProps {
     title: string;
     image: string;
     urlGithub: string;
+    urlDemo?: string;
   };
 }
 
