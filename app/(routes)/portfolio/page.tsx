@@ -21,7 +21,7 @@ const PortfolioPage = () => {
                         grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 
                         justify-items-center">
             {dataPortfolio.map((data) => (
-            <PortfolioBox key={data.id} data={data} />
+            <PortfolioBox key={data.id} data={data}/>
             ))}
         </div>
         </div>
