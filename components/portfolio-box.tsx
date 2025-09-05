@@ -1,21 +1,22 @@
-import Link from "next/link"; 
 import Image from "next/image";
+import Link from "next/link";
 
 interface PortfolioBoxProps {
-  data: {
-    id: number;
-    title: string;
-    image: string;
-    urlGithub: string;
-    urlDemo?: string;
-  };
+    data: {
+        id: number,
+        title: string
+        image: string
+        urlGithub: string
+        urlDemo: string
+    }
 }
 
-const PortfolioBox = ({ data }: PortfolioBoxProps) => {
-  const { id, title, image, urlGithub, urlDemo } = data;
+const PortfolioBox = (props: PortfolioBoxProps) => {
+    const { data } = props
+    const { id, title, image, urlDemo, urlGithub } = data
 
-  return (
-     <div
+    return (
+        <div
             key={id}
             className="p-4 border border-teal-50 rounded-xl"
         >
@@ -27,25 +28,24 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
             />
 
             <div className="flex gap-5 mt-5">
-              <Link
-                href={urlGithub}
-                target="_blank"
-                className="inline-block px-4 py-2 text-white rounded-lg bg-slate-500 transition duration-150 hover:bg-slate-500/80"
-              >
-                Github
-              </Link>
-              {urlDemo && urlDemo !== "#!" && (  // solo mostrar si es diferente de "#!"
                 <Link
-                  href={urlDemo}
-                  target="_blank"
-                  className="inline-block px-4 py-2 text-white rounded-lg bg-teal-500 transition duration-150 hover:bg-teal-500/80"
+                    href={urlGithub}
+                    target="_blank"
+                    className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
                 >
-                  Demo
+                    Github
                 </Link>
-              )}
+
+                <Link
+                    href={urlDemo}
+                    target="_blank"
+                    className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
+                >
+                    Live demo
+                </Link>
             </div>
         </div>
-  );
-};
+    );
+}
 
-export default PortfolioBox;
+export default PortfolioBox

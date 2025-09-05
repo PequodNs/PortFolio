@@ -119,13 +119,13 @@ export const dataPortfolio = [
         title: "ERP",
         image: "/BasuradeERP.jpg",
         urlGithub: "https://github.com/PequodNs/Erp",
-        urlDemo: "#!",
+        urlDemo: "https://github.com/PequodNs/Erp",
     },
     {
         id: 2,
         title: "PortFolio",
         image: "/portFolio.png",
         urlGithub: "https://github.com/PequodNs/PortFolio",
-        urlDemo: "#!",
+        urlDemo: "https://github.com/PequodNs/PortFolio",
     },
 ];
