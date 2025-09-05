@@ -12,7 +12,7 @@ interface PortfolioBoxProps {
 }
 
 const PortfolioBox = ({ data }: PortfolioBoxProps) => {
-  const { id, title, image, urlGithub } = data;
+  const { id, title, image, urlGithub, urlDemo } = data;
 
   return (
      <div
@@ -34,6 +34,15 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
               >
                 Github
               </Link>
+              {urlDemo && urlDemo !== "#!" && (  // solo mostrar si es diferente de "#!"
+                <Link
+                  href={urlDemo}
+                  target="_blank"
+                  className="inline-block px-4 py-2 text-white rounded-lg bg-teal-500 transition duration-150 hover:bg-teal-500/80"
+                >
+                  Demo
+                </Link>
+              )}
             </div>
         </div>
   );
