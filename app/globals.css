@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+html, body {
+  color: #29282b;
+  background: #dcdee1; 
+}
+
+main {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #80b5ea;
+}
+
+.bg-gradient-cover {
+  background-image: linear-gradient(
+    90.21deg,
+    rgb(251, 251, 251) -5.91%,
+    rgba(119, 118, 118, 0.973) 111.58%
+  );
+}
+
+
