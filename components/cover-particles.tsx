@@ -59,12 +59,18 @@ const CoverParticles = () => {
                             value: "#121111ff",
                         },
                         links: {
-                            color: "#a19e9eff",
-                            distance: 150,
                             enable: true,
-                            opacity: 0.5,
+                            distance: 150,
+                            color: "#a19e9eff",
+                            opacity: 0.4,
                             width: 1,
+                            triangles: {
+                                enable: true,
+                                opacity: 0.05,
+                                color: "#a19e9eff",
+                            },
                         },
+
                         move: {
                             direction: "none",
                             enable: true,
@@ -85,7 +91,7 @@ const CoverParticles = () => {
                             value: 0.5,
                         },
                         shape: {
-                            type: "circle",
+                            type: "triangle",
                         },
                         size: {
                             value: { min: 1, max: 5 },
@@ -99,3 +105,4 @@ const CoverParticles = () => {
 }
  
 export default CoverParticles;
+//"#a19e9eff"
