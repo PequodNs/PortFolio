@@ -122,8 +122,8 @@ export const dataPortfolio = [
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
+        title: "PortFolio",
+        image: "/portFolio.png",
+        urlGithub: "https://github.com/PequodNs/PortFolio",
     },
 ];

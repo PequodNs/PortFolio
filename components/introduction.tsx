@@ -48,7 +48,7 @@ const Introduction = () => {
 
           <div className="flex flex-col items-center gap-3 md:flex-row md:justify-start md:gap-8">
             <a
-              href="/projects"
+              href="/portfolio"
               className="px-3 py-2 text-sm md:text-base transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-white/50"
             >
               Ver proyectos
